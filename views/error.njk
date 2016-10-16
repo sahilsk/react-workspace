@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="row page">
+    <h3>  
+        {{ error.status}}
+    </h3>
+    <h4>
+        {{message}}
+    </h4>
+    <p color='red'>
+        {{error.stack}}
+    </p>
+
+</div>
+{% endblock %}

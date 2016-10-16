@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="row page">
+<style>
+.page h1
+{
+    color:#ff5c33;
+    font-size:120px;
+    text-align:center;
+}
+.page h3
+{
+    color: #ff4d4d;
+    text-align:center;
+}
+</style>
+    <h1>404</h1>
+    <h3>Page Not Found</h3>
+
+    <h3>  
+        {{ error.status}}
+    </h3>
+    <h4>
+        {{message}}
+    </h4>
+    <p>
+        {{error.stack}}
+    </p>
+
+</div>
+{% endblock %}
